@@ -1,0 +1,16 @@
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local StarterGui = game:GetService("StarterGui")
+
+-- Nachricht anzeigen
+StarterGui:SetCore("SendNotification", {
+    Title = "Warning";
+    Text = "You got Hacked kid";
+    Duration = 5;
+})
+
+-- Kurze Wartezeit, damit man die Nachricht sieht
+wait(5)
+
+-- Spieler aus dem Spiel werfen
+player:Kick("You got Hacked kid")
